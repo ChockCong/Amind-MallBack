@@ -1,0 +1,11 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{ item.description }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div *ngIf="item.id == 0">
+        <promotion-add></promotion-add>
+    </div>
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>
+        <button menuToggle ion-button icon-only>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            A.Mind小旺侠管理者平台
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="onItemSelected(item)">
+            <h2>
+                {{ item.description }}
+            </h2>
+        </button>
+    </ion-list>
+</ion-content>
